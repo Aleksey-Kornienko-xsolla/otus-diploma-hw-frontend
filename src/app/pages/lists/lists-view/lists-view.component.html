@@ -1,0 +1,16 @@
+<app-layout>
+  <h1>Your tasks lists</h1>
+  <mat-card appearance="outlined" *ngFor="let list of lists">
+    <mat-card-content>
+      <div class="card">
+      <span class="content">
+        {{ list.name }}
+      </span>
+
+        <button mat-icon-button (click)="handleListClick(list)">
+          <mat-icon>list</mat-icon>
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</app-layout>
