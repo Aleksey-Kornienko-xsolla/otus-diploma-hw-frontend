@@ -1,0 +1,19 @@
+h1 {
+  display: flex;
+  align-items: center;
+}
+
+mat-card {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}

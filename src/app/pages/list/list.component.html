@@ -1,0 +1,29 @@
+<app-layout>
+  <h1>
+    <button mat-icon-button>
+      <mat-icon>keyboard_backspace</mat-icon>
+    </button>
+    <span>You tasks from {{listName}}</span></h1>
+  <mat-card appearance="outlined" *ngFor="let task of tasks">
+    <mat-card-content>
+      <div class="card">
+        <span class="content">
+          {{ task.title }}
+        </span>
+        <div>
+          <button mat-icon-button>
+            <mat-icon> border_color</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>delete_outline</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <div class="footer">
+    <button mat-fab>
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</app-layout>
